@@ -125,5 +125,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+LOGIN_REDIRECT_URL = '/'
+
 if DEBUG:
     from .settings_dev import *

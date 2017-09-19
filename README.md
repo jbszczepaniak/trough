@@ -1,2 +1,2 @@
 Superuser:
-jedrzejszczepaniak:123s
+jedrzejszczepaniak:123
