@@ -3,6 +3,7 @@
     <a href="{% url 'core:logout' %}">logout</a>
 {% else %}
     <a href="{% url 'core:login' %}">login</a>
+    <a href="{% url 'core:signup' %}">register</a>
 {% endif %}
 
 {% block content %}
