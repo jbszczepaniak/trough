@@ -1,2 +1,0 @@
-Superuser:
-jedrzejszczepaniak:123
