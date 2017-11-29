@@ -80,3 +80,5 @@ fabric.properties
 .idea/sonarlint
 
 .idea/*
+
+.DS_Store
