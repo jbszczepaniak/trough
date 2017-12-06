@@ -10,7 +10,10 @@ class Ingredient(models.Model):
     dish = models.ForeignKey(Dish, on_delete=models.CASCADE, null=True)
 
     def __str__(self):
-        return f'name: {self.name}, amount: {self.amount.value} {self.amount.get_units_display()}, product: {self.product.name}'
+        return f'name: {self.name}, ' \
+               f'amount: {self.amount.value} {self.amount.get_units_display()}, ' \
+               f'product: {self.product.name}'
+
 
 class Product(models.Model):
     name = models.CharField(max_length=255, null=True)

@@ -51,12 +51,5 @@ def test_single_product_can_be_part_of_multiple_ingredients():
     tuna_100g.product = tuna
     tuna_100g.save()
 
-    print(tuna_100g)
-    # print(tuna_100g.amount.value)
-
-
-
-
-
-
-
+    assert(tuna_100g.product == tuna)
+    assert(tuna_200g.product == tuna)
