@@ -47,3 +47,7 @@ def test_single_product_can_be_part_of_multiple_ingredients():
 
     assert(tuna_100g.product == tuna)
     assert(tuna_200g.product == tuna)
+
+@pytest.mark.django_db
+def test_dish_can_be_rated():
+    pass

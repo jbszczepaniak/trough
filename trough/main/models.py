@@ -28,7 +28,7 @@ class Amount(models.Model):
     units = models.IntegerField(null=True, choices=UNITS_CHOICES, default=GRAM)
 
     def __str__(self):
-        return f'{self.value}, {self.get_units_display()}'
+        return f'{self.value} {self.get_units_display()}(s)'
 
 
 class Dish(models.Model):
