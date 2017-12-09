@@ -11,10 +11,18 @@ class Product(models.Model):
 class Amount(models.Model):
     GRAM = 0
     PIECES = 1
+    TEA_SPOON = 2
+    TABLE_SPOON = 3
+    GLASS = 4
+    PINCH = 5
 
     UNITS_CHOICES = (
         (GRAM, 'Gram'),
         (PIECES, 'Pieces'),
+        (TEA_SPOON, 'Tea spoon'),
+        (TABLE_SPOON, 'Table spoon'),
+        (GLASS, 'Glass'),
+        (PINCH, 'Pinch'),
     )
     value = models.IntegerField(null=True)
     units = models.IntegerField(null=True, choices=UNITS_CHOICES, default=GRAM)
