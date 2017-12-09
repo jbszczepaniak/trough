@@ -11,6 +11,7 @@ class DishAdmin(admin.ModelAdmin):
     model = Dish
     inlines = [IngredientInline]
 
+
 admin.site.register(Dish, DishAdmin)
 
 admin.site.register([Ingredient, Product, Amount])
