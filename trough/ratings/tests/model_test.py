@@ -1,5 +1,8 @@
-from django.test import TestCase
+import pytest
+
+from trough.ratings.models import RatingCategory
 
 
-def test_me():
-    assert 1 == 1
+@pytest.mark.django_db
+def test_rating_has_configurable_categories():
+    RatingCategory.objects.create(name='Preparation speed')

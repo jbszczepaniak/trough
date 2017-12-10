@@ -44,8 +44,6 @@ class Ingredient(models.Model):
     dish = models.ForeignKey(Dish, on_delete=models.CASCADE, null=True)
 
     def __str__(self):
-        return f'amount: {self.amount.value} {self.amount.get_units_display()}, ' \
-               f'product: {self.product.name}'
-
-
-
+        return (f'amount: {self.amount.value} '
+                f'{self.amount.get_units_display()},'
+                f'product: {self.product.name}')
