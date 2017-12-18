@@ -25,4 +25,3 @@ def test_rating_can_have_integer_values_from_0_to_10():
     with pytest.raises(ValidationError):
         Rating(name='sweetness', value=20).full_clean()
         Rating(name='sweetness', value=-2).full_clean()
-

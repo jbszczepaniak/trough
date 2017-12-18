@@ -5,6 +5,7 @@ from trough.main.models import Ingredient, Product, Dish, Amount
 
 class IngredientInline(admin.TabularInline):
     model = Ingredient
+    extra = 0
 
 
 class DishAdmin(admin.ModelAdmin):

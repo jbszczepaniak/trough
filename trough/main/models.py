@@ -1,5 +1,7 @@
 from django.db import models
 
+from trough.ratings.models import RatingCategory
+
 
 class Product(models.Model):
     name = models.CharField(max_length=255, null=True)
@@ -33,6 +35,7 @@ class Amount(models.Model):
 
 class Dish(models.Model):
     name = models.CharField(max_length=255, blank=False)
+    rating_categories = models.ManyToManyField(RatingCategory)
 
     def __str__(self):
         return f'{self.name}'
